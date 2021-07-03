@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>oshironozukan</title>
+  <link rel="stylesheet" href="../oshiro/css/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="index .html">おしろのずかん</a>
+    </div>
+    <div id="hamburger">
+      <div class="icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="sub-title">～天守閣を持つお城を紹介～</div>
+
+    <nav class="sm">
+      <ul>
+        <li><a href="menu1.html">現存天守十二城</a></li>
+        <li><a href="menu2.html">復元天守十四城</a></li>
+        <li><a href="menu3.html">復興天守十三城</a></li>
+      </ul>
+    </nav>
+
+    <nav class="pc">
+      <ul>
+        <li><a href="#">現存天守十二城</a></li>
+        <li><a href="#">復元天守十四城</a></li>
+        <li><a href="#">復興天守十三城</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    $('#hamburger').on('click', function () {
+      $('.icon').toggleClass('close');
+      $('.sm').slideToggle();
+    });
+  </script>
+
+  <div class="container">
+    <div class="btn-container">
+      <div class="inner">
+        <a href="menu1.html" class="inner-CTA"><span></span>
+          <p class="inner-CTA-Text">現存天守十二城</p>
+        </a>
+      </div>
+      <div class="inner">
+        <a href="menu2.html" class="inner-CTA"><span></span>
+          <p class="inner-CTA-Text">復元天守十四城</p>
+        </a>
+      </div>
+      <div class="inner">
+        <a href="menu3.html" class="inner-CTA"><span></span>
+          <p class="inner-CTA-Text">復興天守十三城</p>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div>
+      <p><small>&copy; oshironozukan</small></p>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>

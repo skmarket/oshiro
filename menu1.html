@@ -3,78 +3,56 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>osiro-menu1</title>
   <link rel="stylesheet" href="css/menu.css">
 </head>
 
 <body>
   <header>
-    <a href="index.html">
-      <h1 class="title">おしろのずかん</h1>
-    </a>
+    <div class="logo">
+      <a href="index .html">おしろのずかん
+      </a>
+    </div>
+    <div id="hamburger">
+      <div class="icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="sub-title">～天守閣を持つお城を紹介～</div>
 
-    <div class="btn-menu">めにゅー</div>
-
-    <nav>
-      <form>
-        <input id="ac-check-1" class="ac-check" type="checkbox">
-        <label class="ac-label" for="ac-check-1">現存天守十二城</label>
-        <div class="ac-content">
-          <p>弘前城</p>
-          <p>松本城</p>
-          <p>丸岡城</p>
-          <p>犬山城</p>
-          <p>彦根城</p>
-          <p>松江城</p>
-          <p>備中松山城</p>
-          <p>丸亀城</p>
-          <p>松山城</p>
-          <p>宇和島城</p>
-          <p>高知城</p>
-        </div>
-      </form>
-      <form>
-        <input id="ac-check-2" class="ac-check" type="checkbox">
-        <label class="ac-label" for="ac-check-2">復元天守十四城</label>
-        <div class="ac-content">
-          <p>弘前城</p>
-          <p>松本城</p>
-          <p>丸岡城</p>
-          <p>犬山城</p>
-          <p>彦根城</p>
-          <p>松江城</p>
-          <p>備中松山城</p>
-          <p>丸亀城</p>
-          <p>松山城</p>
-          <p>宇和島城</p>
-          <p>高知城</p>
-        </div>
-      </form>
-      <form>
-        <input id="ac-check-3" class="ac-check" type="checkbox">
-        <label class="ac-label" for="ac-check-3">復興天守十三城</label>
-        <div class="ac-content">
-          <p>弘前城</p>
-          <p>松本城</p>
-          <p>丸岡城</p>
-          <p>犬山城</p>
-          <p>彦根城</p>
-          <p>松江城</p>
-          <p>備中松山城</p>
-          <p>丸亀城</p>
-          <p>松山城</p>
-          <p>宇和島城</p>
-          <p>高知城</p>
-        </div>
-      </form>
-      <script src="side-bar.js"></script>
+    <nav class="sm">
+      <ul>
+        <li><a href="menu1.html">現存天守十二城</a></li>
+        <li><a href="menu2.html">復元天守十四城</a></li>
+        <li><a href="menu3.html">復興天守十三城</a></li>
+      </ul>
     </nav>
+
+    <nav class="pc">
+      <ul>
+        <li><a href="menu1.html">現存天守十二城</a></li>
+        <li><a href="menu2.html">復元天守十四城</a></li>
+        <li><a href="menu3.html">復興天守十三城</a></li>
+      </ul>
+    </nav>
+
   </header>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    $('#hamburger').on('click', function () {
+      $('.icon').toggleClass('close');
+      $('.sm').slideToggle();
+    });
+  </script>
 
   <div class="container">
     <div class="btn-12-container">
       <div class="Inner-12">
-        <a href="hirosaki.html" class="Inner-CTA-12"><span></span>
+        <a href="maruoka.html" class="Inner-CTA-12"><span></span>
           <p class="Inner-CTA-Text-12">丸岡城</p>
         </a>
       </div>
